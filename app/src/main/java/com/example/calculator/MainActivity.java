@@ -72,4 +72,17 @@ public class MainActivity extends AppCompatActivity {
             resultText.setText("Result: " + result);
         }
     }
+
+    public void divide(View view) {
+        if (number1.getText().toString().equals("") || number2.getText().toString().equals("")) {
+            resultText.setText("!Enter Number!");
+        } else {
+            double num1 = Integer.parseInt(number1.getText().toString());
+            double num2 = Integer.parseInt(number2.getText().toString());
+
+            double result = num1 / num2;
+
+            resultText.setText("Result: " + result);
+        }
+    }
 }
